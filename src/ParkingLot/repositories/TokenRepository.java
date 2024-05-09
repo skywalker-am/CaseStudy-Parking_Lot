@@ -7,12 +7,12 @@ import java.util.TreeMap;
 
 public class TokenRepository {
     private Map<Long , Token> tokens = new TreeMap<>();
-    private Long previousId = 0L;
+    private Long id = 0L;
 
     public Token save(Token token) {
-        previousId += 1;
-        token.setId(previousId);
-        tokens.put(previousId, token);
+        id += 1;
+        token.setId(id);
+        tokens.put(id, token);
         return token;
     }
 

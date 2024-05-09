@@ -10,6 +10,10 @@ public class GateRepository {
     // id , ----
     private Map<Long,Gate> gates = new TreeMap<>();
 
+    public void insertGate(Gate gate) {
+
+    }
+
     public Optional<Gate> findGateById(Long gateId) {
         // db.execute('select * from gate where gate_id = gateId');
         if(gates.containsKey(gateId)){
